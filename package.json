@@ -1,0 +1,20 @@
+{
+  "name": "gumband",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "setup": "npm i && npm i --prefix ./server/ && npm i --prefix ./client/",
+    "dev:s": "npm start --prefix ./server/",
+    "dev:c": "npm run dev --prefix ./client/",
+    "dev": "npm-run-all --print-label --parallel \"dev:*\"",
+    "test": "jest --watchAll"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "npm-run-all": "^4.1.5"
+  }
+}
